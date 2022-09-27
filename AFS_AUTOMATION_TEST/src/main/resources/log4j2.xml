@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <RollingRandomAccessFile name="LogToRollingRandomAccessFile" fileName="/Testing/Testing.log"
+                                 filePattern="/Testing/$${date:yyyy-MMM-dd}/Testing-%d{dd-MMM-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%p %d [%t] %c{1.} %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="400 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="50"/>
+        </RollingRandomAccessFile>
+
+    </Appenders>
+    <Loggers>
+        <Logger name="*" level="debug" additivity="false">
+            <AppenderRef ref="LogToRollingRandomAccessFile"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        <Root level="INFO">
+         	<AppenderRef ref="LogToRollingRandomAccessFile"/>
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>

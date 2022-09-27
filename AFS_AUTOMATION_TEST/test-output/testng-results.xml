@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9364" started-at="2022-09-26T11:56:43 IST" finished-at="2022-09-26T11:56:53 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9364" started-at="2022-09-26T11:56:43 IST" finished-at="2022-09-26T11:56:53 IST">
+      <class name="com.testcases.LoginTestCases">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testcases.LoginTestCases@68f1b17f]" name="setup" is-config="true" duration-ms="7216" started-at="2022-09-26T11:56:43 IST" finished-at="2022-09-26T11:56:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="generateReportPath()[pri:0, instance:com.testcases.LoginTestCases@68f1b17f]" name="generateReportPath" is-config="true" duration-ms="76" started-at="2022-09-26T11:56:51 IST" finished-at="2022-09-26T11:56:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportPath -->
+        <test-method status="PASS" signature="pageNavigation()[pri:0, instance:com.testcases.LoginTestCases@68f1b17f]" name="pageNavigation" duration-ms="288" started-at="2022-09-26T11:56:51 IST" finished-at="2022-09-26T11:56:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageNavigation -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.testcases.LoginTestCases@68f1b17f]" name="endTest" is-config="true" duration-ms="237" started-at="2022-09-26T11:56:52 IST" finished-at="2022-09-26T11:56:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.LoginTestCases@68f1b17f]" name="tearDown" is-config="true" duration-ms="692" started-at="2022-09-26T11:56:52 IST" finished-at="2022-09-26T11:56:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testcases.LoginTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
